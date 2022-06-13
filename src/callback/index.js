@@ -7,3 +7,18 @@ function calc(num1, num2, callback) {
 }
 
 console.log(calc(100,250,sum));
+
+//aca vamos a imprimir la fecha
+function date(callback) {
+    console.log(new Date)
+    setTimeout(() => {
+        let date = new Date;
+        callback(date);
+    }, 3000);
+}
+
+function printDate(dateNow){
+    console.log(dateNow);
+}
+
+date(printDate);
