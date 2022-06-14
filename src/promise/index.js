@@ -2,7 +2,7 @@
 
 const somethingWillHappen = () => {
     return new Promise((resolve, reject) => {
-        if (false) {
+        if (true) {
             resolve("Hey!");
         } else {
             reject("Whoooops!");
@@ -31,7 +31,7 @@ const somethingWillHappe2 = () => {
 somethingWillHappe2()
     .then(response => console.log(response))
     .catch(err => console.log(err));
-    //.then(() => console.log("Buena!"))
+    //.then(() => console.log("Buena!"))*/
 
 // Para correr todas las promesas tenemos el método Promise.all() que nos retornara un array con la respuesta de todas las promesas que pasemos como parametro.
 Promise.all([somethingWillHappen(), somethingWillHappe2()])
